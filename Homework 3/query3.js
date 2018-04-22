@@ -1,0 +1,1 @@
+db.movies.aggregate({ $group: { _id: "$director_name", "total_movies": { $sum: 1 }}});

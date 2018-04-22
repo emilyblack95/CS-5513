@@ -1,0 +1,1 @@
+db.movies.find({ "release_period.year": 1995 }).sort({"gross":-1}).limit(1);
