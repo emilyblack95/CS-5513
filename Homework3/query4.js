@@ -1,0 +1,2 @@
+db.movies.update({ movie_id : 520 }, { $push: {"review": {"critic_id": 44230, "movie_id": 520, "posted_on_date": {"day": 12, "month": 5, "year": 2011, "time": "16:4:25"}, "review_summary": "This is such a great movie!", "rating": "1.9"}}});
+db.movies.find({ movie_id : 520 });
