@@ -1,2 +1,0 @@
-db.movies.update({$and: [{$where: "this.movie_genre = movie_genre"}, {$or: [{"average_rating" : {$gte: {$subtract: ["$average_rating", 1]}}}, {"average_rating" : {$lte: {$add: ["$average_rating", 1]}}}]}]},{$push: {"similar_movies": "$movie_name" }},    {multi: true});
-db.movies.find();
